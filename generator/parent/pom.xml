@@ -15,9 +15,9 @@
 
   <properties>
     <!-- ES4X version -->
-    <es4x.version>0.7.3</es4x.version>
+    <es4x.version>0.7.4-SNAPSHOT</es4x.version>
     <!-- This version matches the stack version to be used -->
-    <stack.version>3.7.0</stack.version>
+    <stack.version>4.0.0-SNAPSHOT</stack.version>
     <!-- This is the source group id -->
     <maven.groupId>io.vertx</maven.groupId>
 
@@ -127,7 +127,7 @@
               <includeClassifiers>sources</includeClassifiers>
               <includes>**/*.java</includes>
               <excludes>
-                examples/**/*.java,io/vertx/core/logging/*.java,io/vertx/**/impl/**/*.*,**/groovy/**/*.*,**/rxjava/**/*.*,**/reactivex/**/*.*
+                examples/**/*.java,io/vertx/core/logging/*.java,**/groovy/**/*.*,**/rxjava/**/*.*,**/reactivex/**/*.*
               </excludes>
               <outputDirectory>${project.build.directory}/sources/${project.artifactId}</outputDirectory>
             </configuration>

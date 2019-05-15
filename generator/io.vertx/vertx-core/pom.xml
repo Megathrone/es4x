@@ -13,7 +13,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>vertx-core</artifactId>
-  <version>3.7.0</version>
+  <version>4.0.0-SNAPSHOT</version>
 
   <properties>
     <maven.groupId>io.vertx</maven.groupId>
@@ -46,6 +46,18 @@
       <version>${project.version}</version>
       <scope>provided</scope>
       <classifier>sources</classifier>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <version>4.1.34.Final</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-kqueue</artifactId>
+      <version>4.1.34.Final</version>
+      <optional>true</optional>
     </dependency>
   </dependencies>
 

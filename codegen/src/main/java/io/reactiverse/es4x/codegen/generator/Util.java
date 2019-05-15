@@ -53,6 +53,14 @@ public final class Util {
     TYPES.put("java.lang.CharSequence", "string");
     TYPES.put("java.lang.Iterable<java.lang.String>", "string[]");
     TYPES.put("java.lang.Iterable<java.lang.CharSequence>", "string[]");
+    TYPES.put("java.lang.Boolean[]", "boolean[]");
+    TYPES.put("java.lang.Double[]", "number[]");
+    TYPES.put("java.lang.Float[]", "number[]");
+    TYPES.put("java.lang.Integer[]", "number[]");
+    TYPES.put("java.lang.Long[]", "number[]");
+    TYPES.put("java.lang.Short[]", "number[]");
+    TYPES.put("java.lang.String[]", "string[]");
+    TYPES.put("java.time.Instant", "Date");
 
     // reserved typescript keywords
     RESERVED.addAll(Arrays.asList(
@@ -209,6 +217,7 @@ public final class Util {
         if (TYPES.containsKey(type.getName())) {
           return TYPES.get(type.getName());
         } else {
+
           System.out.println("@@@ " + type.getName());
           return "any /* " + type.getName() + " */";
         }
